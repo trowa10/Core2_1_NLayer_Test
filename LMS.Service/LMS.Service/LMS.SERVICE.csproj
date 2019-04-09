@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LMS.DOMAIN\LMS.DOMAIN.csproj" />
+    <ProjectReference Include="..\LMS.MANAGER\LMS.MANAGER.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Module\" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,14 @@
+c:\users\me004266882\source\repos\LMS.Service\LMS.MANAGER\obj\Debug\netcoreapp2.1\LMS.MANAGER.csprojAssemblyReference.cache
+c:\users\me004266882\source\repos\LMS.Service\LMS.MANAGER\obj\Debug\netcoreapp2.1\LMS.MANAGER.csproj.CoreCompileInputs.cache
+c:\users\me004266882\source\repos\LMS.Service\LMS.MANAGER\obj\Debug\netcoreapp2.1\LMS.MANAGER.AssemblyInfoInputs.cache
+c:\users\me004266882\source\repos\LMS.Service\LMS.MANAGER\obj\Debug\netcoreapp2.1\LMS.MANAGER.AssemblyInfo.cs
+c:\users\me004266882\source\repos\LMS.Service\LMS.MANAGER\bin\Debug\netcoreapp2.1\LMS.MANAGER.deps.json
+c:\users\me004266882\source\repos\LMS.Service\LMS.MANAGER\bin\Debug\netcoreapp2.1\LMS.MANAGER.dll
+c:\users\me004266882\source\repos\LMS.Service\LMS.MANAGER\bin\Debug\netcoreapp2.1\LMS.MANAGER.pdb
+c:\users\me004266882\source\repos\LMS.Service\LMS.MANAGER\bin\Debug\netcoreapp2.1\LMS.DALL.dll
+c:\users\me004266882\source\repos\LMS.Service\LMS.MANAGER\bin\Debug\netcoreapp2.1\LMS.DOMAIN.dll
+c:\users\me004266882\source\repos\LMS.Service\LMS.MANAGER\bin\Debug\netcoreapp2.1\LMS.DALL.pdb
+c:\users\me004266882\source\repos\LMS.Service\LMS.MANAGER\bin\Debug\netcoreapp2.1\LMS.DOMAIN.pdb
+c:\users\me004266882\source\repos\LMS.Service\LMS.MANAGER\obj\Debug\netcoreapp2.1\LMS.MANAGER.csproj.CopyComplete
+c:\users\me004266882\source\repos\LMS.Service\LMS.MANAGER\obj\Debug\netcoreapp2.1\LMS.MANAGER.dll
+c:\users\me004266882\source\repos\LMS.Service\LMS.MANAGER\obj\Debug\netcoreapp2.1\LMS.MANAGER.pdb

@@ -1,0 +1,9 @@
+c:\users\me004266882\source\repos\LMS.Service\LMS.COMMON\bin\Debug\netcoreapp2.1\LMS.COMMON.deps.json
+c:\users\me004266882\source\repos\LMS.Service\LMS.COMMON\bin\Debug\netcoreapp2.1\LMS.COMMON.dll
+c:\users\me004266882\source\repos\LMS.Service\LMS.COMMON\bin\Debug\netcoreapp2.1\LMS.COMMON.pdb
+c:\users\me004266882\source\repos\LMS.Service\LMS.COMMON\obj\Debug\netcoreapp2.1\LMS.COMMON.csprojAssemblyReference.cache
+c:\users\me004266882\source\repos\LMS.Service\LMS.COMMON\obj\Debug\netcoreapp2.1\LMS.COMMON.csproj.CoreCompileInputs.cache
+c:\users\me004266882\source\repos\LMS.Service\LMS.COMMON\obj\Debug\netcoreapp2.1\LMS.COMMON.AssemblyInfoInputs.cache
+c:\users\me004266882\source\repos\LMS.Service\LMS.COMMON\obj\Debug\netcoreapp2.1\LMS.COMMON.AssemblyInfo.cs
+c:\users\me004266882\source\repos\LMS.Service\LMS.COMMON\obj\Debug\netcoreapp2.1\LMS.COMMON.dll
+c:\users\me004266882\source\repos\LMS.Service\LMS.COMMON\obj\Debug\netcoreapp2.1\LMS.COMMON.pdb

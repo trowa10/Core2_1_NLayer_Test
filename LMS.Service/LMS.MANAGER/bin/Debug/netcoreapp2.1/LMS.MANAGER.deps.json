@@ -1,0 +1,50 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.1",
+    "signature": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.1": {
+      "LMS.MANAGER/1.0.0": {
+        "dependencies": {
+          "LMS.DALL": "1.0.0",
+          "LMS.DOMAIN": "1.0.0"
+        },
+        "runtime": {
+          "LMS.MANAGER.dll": {}
+        }
+      },
+      "LMS.DALL/1.0.0": {
+        "dependencies": {
+          "LMS.DOMAIN": "1.0.0"
+        },
+        "runtime": {
+          "LMS.DALL.dll": {}
+        }
+      },
+      "LMS.DOMAIN/1.0.0": {
+        "runtime": {
+          "LMS.DOMAIN.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "LMS.MANAGER/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LMS.DALL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LMS.DOMAIN/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
