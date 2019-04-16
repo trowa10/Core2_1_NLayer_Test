@@ -7,6 +7,6 @@ namespace LMS.DALL
 {
     public interface IUserDal
     {
-       Task<ICollection<UserDOModel>> Get();
+       Task<ICollection<User>> Get();
     }
 }

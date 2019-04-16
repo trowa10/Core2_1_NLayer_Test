@@ -5,6 +5,7 @@ using System.Reflection;
 using System.Threading.Tasks;
 using Autofac;
 using Autofac.Extensions.DependencyInjection;
+using LMS.API.Configuration;
 using LMS.API.Controllers;
 using LMS.DALL;
 using LMS.MANAGER;
@@ -33,10 +34,13 @@ namespace LMS.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.ConfigureSqlContext(Configuration);
+            services.ConfigureRepositoryWrapper();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-            services.AddTransient<IUserService, UserService>();
-            services.AddTransient<IUserManager, UserManager>();
-            services.AddTransient<IUserDal, UserDal>();
+           
+            //services.AddTransient<IUserService, UserService>();
+            //services.AddTransient<IUserManager, UserManager>();
+            //services.AddTransient<IUserDal, UserDal>();
             //Now register our services with Autofac container
             // var builder = new ContainerBuilder();
             // builder.RegisterType<UserService>().As<IUserService>().InstancePerLifetimeScope();

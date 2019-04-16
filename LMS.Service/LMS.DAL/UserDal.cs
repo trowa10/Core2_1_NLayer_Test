@@ -13,16 +13,16 @@ namespace LMS.DALL
 
         }
 
-        public async Task<ICollection<UserDOModel>> Get()
+        public async Task<ICollection<User>> Get()
         {
-            var users = new List<UserDOModel>()
+            var users = new List<User>()
             {
-               new UserDOModel(1,"Marlon", "Francisco", "Elpedes"),
-                new UserDOModel(1,"John", "Clark", "Elpedes")
+               new User(){FirstName = "" },
+
             };
 
 
-            return await Task.Run(()=>users);
+            return await Task.Run(() => users);
         }
     }
 }

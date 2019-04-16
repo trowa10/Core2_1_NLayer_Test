@@ -7,6 +7,6 @@ namespace LMS.SERVICE
 {
     public interface IUserService
     {
-        Task<ICollection<UserDOModel>> GetUser();
+        Task<ICollection<User>> GetUser();
     }
 }

@@ -15,7 +15,7 @@ namespace LMS.SERVICE
             _userManager = userManager;
         }
 
-        public async Task<ICollection<UserDOModel>> GetUser()
+        public async Task<ICollection<User>> GetUser()
         {           
             return await _userManager.GetUser();
         }

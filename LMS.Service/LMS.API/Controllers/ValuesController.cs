@@ -20,7 +20,7 @@ namespace LMS.API.Controllers
 
         // GET api/values
         [HttpGet]
-        public async Task<ICollection<UserDOModel>> Get()
+        public async Task<ICollection<User>> Get()
         {
              return await _userService.GetUser();
 

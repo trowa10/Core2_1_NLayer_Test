@@ -7,6 +7,6 @@ namespace LMS.MANAGER
 {
     public interface IUserManager
     {
-        Task<ICollection<UserDOModel>> GetUser();
+        Task<ICollection<User>> GetUser();
     }
 }
