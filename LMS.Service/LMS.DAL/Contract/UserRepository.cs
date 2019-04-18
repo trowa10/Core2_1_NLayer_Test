@@ -21,5 +21,12 @@ namespace LMS.DALL.Contract
             return FindAll()
                 .OrderBy(x => x.LastName);
         }
+
+        public User GetUserById(int userId)
+        {
+            return FindByCondition(x => x.UserId == userId)
+                .DefaultIfEmpty(new User())
+                .FirstOrDefault();
+        }
     }
 }
