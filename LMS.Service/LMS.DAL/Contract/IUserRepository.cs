@@ -8,7 +8,7 @@ namespace LMS.DALL.Contract
 {
     public interface IUserRepository: IRepositoryBase<User>
     {
-        IEnumerable<User> GetUser();
+        IEnumerable<User> GetUsers();
         User GetUserById(int userId);
     }
 }

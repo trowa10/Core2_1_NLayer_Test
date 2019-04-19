@@ -1,25 +1,32 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using LMS.DALL;
+using LMS.DALL.Repository;
 using LMS.DOMAIN;
+using LMS.MANAGER.Extension;
+using LMS.MANAGER.Model;
 
 namespace LMS.MANAGER
 {
     public class UserManager : IUserManager
     {
-        private IUserDal _userDal;
-        public UserManager(IUserDal userDal)
+        private IRepositoryWrapper _repoWrapper;
+        public UserManager(IRepositoryWrapper repoWrapper)
         {
-            _userDal = userDal;
+            _repoWrapper = repoWrapper;
         }
 
-        public UserManager() { }
-
-        public async Task<ICollection<User>> GetUser()
+        public UserModel GetUserById(int userId)
         {
-            return await _userDal.Get();
+            return _repoWrapper.User.GetUserById(userId).Map();
+        }
+
+        public IEnumerable<UserModel> GetUsers()
+        {
+            return _repoWrapper.User.GetUsers().Map();
         }
     }
 }

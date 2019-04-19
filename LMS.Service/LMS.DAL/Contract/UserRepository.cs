@@ -16,7 +16,7 @@ namespace LMS.DALL.Contract
             this._lMSContext = lMSContext;
         }
 
-        public IEnumerable<User> GetUser()
+        public IEnumerable<User> GetUsers()
         {
             return FindAll()
                 .OrderBy(x => x.LastName);

@@ -10,7 +10,11 @@ namespace LMS.DALL.Repository
     {
         private readonly LMSContext _repoContext;
         private IUserRepository _user;
-    
+
+        public RepositoryWrapper(LMSContext repositoryContext)
+        {
+            _repoContext = repositoryContext;
+        }
         public IUserRepository User
         {
             get

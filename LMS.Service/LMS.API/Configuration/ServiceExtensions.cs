@@ -1,5 +1,6 @@
 ﻿using LMS.DALL.Data;
 using LMS.DALL.Repository;
+using LMS.MANAGER;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -15,13 +16,15 @@ namespace LMS.API.Configuration
         public static void ConfigureSqlContext(this IServiceCollection services, IConfiguration config)
         {
             var connectionString = config["ConnectionString:LMSDB"];
-            services.AddDbContext<LMSContext>(o => o.UseSqlServer(connectionString));
-
+        
+            services.AddDbContext<LMSContext>(options =>
+               options.UseSqlServer(connectionString));
         }
 
         public static void ConfigureRepositoryWrapper(this IServiceCollection services)
         {
             services.AddScoped<IRepositoryWrapper, RepositoryWrapper>();
+            services.AddScoped<IUserManager, UserManager>();
         }
     }
 }

@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using LMS.DOMAIN;
-using LMS.SERVICE;
+using LMS.MANAGER;
+using LMS.MANAGER.Model;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LMS.API.Controllers
@@ -12,19 +13,29 @@ namespace LMS.API.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
-        private IUserService _userService;
-        public ValuesController(IUserService userService)
+        private IUserManager _userManager;
+        //public ValuesController(IUserService userService)
+        //{
+        //    _userService = userService;
+        //}
+
+        public ValuesController(IUserManager userManager)
         {
-            _userService = userService;
+            _userManager = userManager;
         }
-
         // GET api/values
-        [HttpGet]
-        public async Task<ICollection<User>> Get()
-        {
-             return await _userService.GetUser();
+        //[HttpGet]
+        //public async Task<ICollection<User>> Get()
+        //{
+        //     //return await _userService.GetUser();
 
-            //return null;
+        //    return null;
+        //}
+
+        [HttpGet]
+        public IEnumerable<UserModel> Get()
+        {
+            return _userManager.GetUsers();
         }
 
         // GET api/values/5

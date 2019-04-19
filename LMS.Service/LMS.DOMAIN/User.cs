@@ -13,8 +13,8 @@ namespace LMS.DOMAIN
         public string FirstName { get; set; }
         [Column(TypeName = "varchar(20)")]
         public string LastName { get; set; }
-        [Column(TypeName = "varchar(10)")]
-        public string Gender { get; set; }
+        //[Column(TypeName = "varchar(10)")]
+        //public string Gender { get; set; }
         [Column(TypeName = "dateTime")]
         public DateTime DateOfBirth { get; set; }
         [Column(TypeName = "varchar(20)")]

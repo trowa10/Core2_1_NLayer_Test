@@ -9,7 +9,6 @@ using LMS.API.Configuration;
 using LMS.API.Controllers;
 using LMS.DALL;
 using LMS.MANAGER;
-using LMS.SERVICE;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;

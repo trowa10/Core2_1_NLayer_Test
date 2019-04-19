@@ -15,10 +15,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\LMS.COMMON\LMS.COMMON.csproj" />
     <ProjectReference Include="..\LMS.DAL\LMS.DALL.csproj" />
     <ProjectReference Include="..\LMS.DOMAIN\LMS.DOMAIN.csproj" />
     <ProjectReference Include="..\LMS.MANAGER\LMS.MANAGER.csproj" />
-    <ProjectReference Include="..\LMS.Service\LMS.SERVICE.csproj" />
   </ItemGroup>
 
 </Project>

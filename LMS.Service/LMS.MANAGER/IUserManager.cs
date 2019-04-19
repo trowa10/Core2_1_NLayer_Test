@@ -1,4 +1,5 @@
 ﻿using LMS.DOMAIN;
+using LMS.MANAGER.Model;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -7,6 +8,7 @@ namespace LMS.MANAGER
 {
     public interface IUserManager
     {
-        Task<ICollection<User>> GetUser();
+        IEnumerable<UserModel> GetUsers();
+        UserModel GetUserById(int userId);
     }
 }
