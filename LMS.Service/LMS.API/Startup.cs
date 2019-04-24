@@ -36,7 +36,7 @@ namespace LMS.API
             services.ConfigureSqlContext(Configuration);
             services.ConfigureRepositoryWrapper();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-           
+            services.ConfigureCors();
             //services.AddTransient<IUserService, UserService>();
             //services.AddTransient<IUserManager, UserManager>();
             //services.AddTransient<IUserDal, UserDal>();
@@ -70,7 +70,15 @@ namespace LMS.API
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            else
+            {
+                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+                //app.UseExceptionHandler("/Error"); if you have custom error
+                app.UseHsts(); // HSTS Middleware (UseHsts) to send HTTP Strict Transport Security Protocol (HSTS) headers to clients.
+            }
+            app.UseHttpsRedirection(); // HTTPS Redirection Middleware (UseHttpsRedirection) to redirect HTTP requests to HTTPS.
+            app.UseCors("LMSCors");
+            app.UseStaticFiles(); // For the wwwroot folder
             app.UseMvc();
         }
     }

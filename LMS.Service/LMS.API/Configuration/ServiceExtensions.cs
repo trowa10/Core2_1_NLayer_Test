@@ -16,7 +16,7 @@ namespace LMS.API.Configuration
         public static void ConfigureSqlContext(this IServiceCollection services, IConfiguration config)
         {
             var connectionString = config["ConnectionString:LMSDB"];
-        
+
             services.AddDbContext<LMSContext>(options =>
                options.UseSqlServer(connectionString));
         }
@@ -25,6 +25,17 @@ namespace LMS.API.Configuration
         {
             services.AddScoped<IRepositoryWrapper, RepositoryWrapper>();
             services.AddScoped<IUserManager, UserManager>();
+        }
+
+        //Cross-Origin Resource Sharing
+        public static void ConfigureCors(this IServiceCollection services)
+        {
+            services.AddCors(x => x.AddPolicy("LMSCors", builder =>
+            {
+                builder.AllowAnyMethod() // Allow any header from HTTP
+                        .AllowAnyHeader() //Allow PUT/POST/GET/DELETE
+                        .AllowAnyOrigin(); //allow request to any domain
+            }));
         }
     }
 }
